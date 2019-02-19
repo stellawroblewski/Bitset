@@ -1,0 +1,16 @@
+allocBitSet uses two helper functions (getBytesForBits and the constructor)
+it uses the constructor to create the bitset and get BytesForBits to determine the nu,ber of bits to initialize if the input is not a multiple of 8
+
+setbit uses two helper functions (getCharIndex and getBitShift) to find the index 
+of the bit to be set and sets it
+
+clearbit operates the same way as set bit, but shifts using a different method
+
+getbit as well
+
+readbitset is commented out bc i didn't get it completely working but it first counts the length of the file, creates a bitset of that length, then opens the file again and goes char by char, setting incrementing indices of the bit based on the char
+
+writebitset opens the file and increments through the whole bit and writes each to the file
+
+
+ test functions for all the main functions can be uncommented in main and each has a variable "num_bits" at the top which can be manipulated to change the size of the bitset
